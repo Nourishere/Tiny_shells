@@ -2,6 +2,7 @@ This is a simple implementation of a Pico-level shell that supports basic operat
 ## Features
 * Simple.
 * Light.
+* Supports four built-in commands (pwd, cd, echo, and exit).
 ## Withdraws
 * Does not support i/o redirection.
 * Does not support variable declarations and environment variables, yet!
