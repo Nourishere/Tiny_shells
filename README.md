@@ -8,6 +8,7 @@ This is a simple implementation of a Pico-level shell that supports basic operat
 * Does not have an autocomplete.
 * Does not offer command suggestions.
 * Does not support arguments, (i.e `bash script.sh`)
+* Does not support jobs.
 * Everything else!
 ------------------------------------------------------------------
 ## Building
