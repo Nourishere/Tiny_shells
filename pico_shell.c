@@ -48,7 +48,6 @@ int main(int argc, char* argv[]){
 				}
 				else if(0 == strcmp(newarg[0],"pwd")){
 					my_pwd();
-					printf("%s %s %s",newarg[0],newarg[1],newarg[2]);
 					free_looped(newarg);
 					exit(0);
 				}
