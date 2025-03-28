@@ -1,4 +1,7 @@
-This is a simple implementation of a Pico-level shell that supports basic operations.
+# README
+This is a progressive implementation of a basic Linux shell.
+# Pico-level shell
+------------------------------------------------------------------
 ## Features
 * Simple.
 * Light.
@@ -17,3 +20,6 @@ This is a simple implementation of a Pico-level shell that supports basic operat
 ## Example
 * Running the shell with `./output` opens up a new shell prompt `$: `.
 * Use it as your normal shell and compare! It is probably not the best!
+------------------------------------------------------------------
+# Nano-level shell
+------------------------------------------------------------------
