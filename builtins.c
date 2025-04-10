@@ -35,17 +35,19 @@ int i;
 }
 
 /* Built in functions */
-void my_pwd(){
+int my_pwd(){
 	char* p = getcwd(NULL, 0);
 	if(NULL == p){
 		write(2,"Error using mypwd\n",19);
+		return -1;
 	}
 	else{
 		write(1,p,strlen(p));
 		write(1,"\n",1);
 	}
+	return 0;
 }
-void my_echo(char** newarg){
+int my_echo(char** newarg){
 	char ** arr2 = newarg;
 	int lsize=0;
 	while(newarg[lsize] != NULL) lsize++;
@@ -53,18 +55,23 @@ void my_echo(char** newarg){
 		if(write(1,*arr2,strlen(*++arr2)) == -1){
 			printf("Error writing\n");
 			free_looped(newarg);
-			exit(-1);
+			return (-1);
 		}
-		else write(1," ",1);
+		else if(lsize==1){
+		}	
+		else{
+			 write(1," ",1);
+		}
 	}
 		printf("\n");
+	return 0;
 }
-void my_cd(char** newarg){
+int my_cd(char** newarg){
 	err = chdir(newarg[1]);
 	if (err == -1){
 		printf("Error: no such file or directory\n");
 		free_looped(newarg);
-		exit(-1);
+		return (-1);
 	}
+	return 0;
 }
-
